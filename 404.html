@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>페이지를 찾을 수 없습니다 · SWOO</title>
+  <meta http-equiv="refresh" content="2; url=/swoo/">
+  <style>
+    body{margin:0;display:flex;align-items:center;justify-content:center;height:100vh;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans KR,sans-serif;background:#0f1118;color:#e6e7ee}
+    .box{max-width:560px;padding:24px;text-align:center}
+    .muted{opacity:.7}
+    a{color:#4fd1c5;text-decoration:none}
+  </style>
+  <script>
+    // GitHub Pages에서 라우팅 보완: 루트가 아닌 리포 경로로 리다이렉트
+    (function(){
+      var repoBase = location.pathname.split('/').slice(0,2).join('/');
+      if(repoBase && repoBase !== '/'){
+        setTimeout(function(){ location.replace(repoBase + '/'); }, 1500);
+      }
+    })();
+  </script>
+  </head>
+<body>
+  <div class="box">
+    <h1>404</h1>
+    <p>요청하신 페이지를 찾을 수 없습니다.</p>
+    <p class="muted">잠시 후 메인 페이지로 이동합니다. <a href="./">바로 이동</a></p>
+  </div>
+</body>
+</html>
+
+
